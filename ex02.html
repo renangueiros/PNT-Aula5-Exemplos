@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Olá, Mundo - React</title>
+
+    <script src="https://unpkg.com/react@17/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" crossorigin></script>
+
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        function OlaPessoa(props) {
+            return (
+                <h1>Olá, {props.nome}!</h1>
+            )
+        }
+
+        ReactDOM.render(
+            <OlaPessoa nome="Renan" />,
+            document.getElementById('root'))
+    </script>
+</body>
+
+</html>
